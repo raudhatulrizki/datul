@@ -8,7 +8,7 @@
 }
 
 .header {
-	width: 1349px;
+	max-width: 1170px;
 	margin: 0 auto;
 	
 }
@@ -48,37 +48,37 @@
 }
 
 .container-dua {
-	width: 1100px;
+	max-width: 1170px;
 	margin-left: 100px;
 	
 }
 
 .container-tiga {
-	width: 1100px;
-	margin: 20px auto;
+	max-width: 1170px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	margin:  10px auto;
 	
-
 }
 
 .kotak {
 	background-color:skyblue;
 	padding: 20px 40px;
-	margin: 25px auto;
-}	
+	margin: 30px 20px;
+}
 
 .link {
 	color: white;
 	text-align: center;
 	display: block;
+
 }
 
 .footer {
-	width: 1349px;
+	max-width: 1170px;
 	border-top: 2px solid #ddd;
-	margin: 50px auto;
+	margin: 10px auto;
 	display: flex;
 }
 
@@ -96,11 +96,6 @@
 	flex: 10%;
 }
 
-a {
-	color: grey;
-	display: block;
-	padding: 1px;
-}
 
 li {
 	list-style: none;
@@ -108,6 +103,14 @@ li {
 
  ul li a {
 	text-decoration: none;
+	color: grey;
+	display: block;
+}
+
+.menu {
+	display: none;
+	float: right;
+	color: black;	
 }
 
 
@@ -115,33 +118,40 @@ li {
 /* responsive */
 
 
-@media( max-width: 670px) {
-
-	.header {
-		width: 100%;
-	}
+@media( max-width: 370px) {
 
 	.list {
 		display: none;
 	}
 
-	.container-satu {
+	.container-tiga {
 		width: 100%;
-	}
-
-	.container-dua {
-		margin-left: 20px;
 	}
 
 	.kotak {
-		width: 100%;
+		margin-bottom: 5px;
 	}
 
 	.footer {
 		width: 100%;
 		flex-wrap: wrap;
-		align-content: center;
-		margin: 0;
+		justify-content: center;
+		margin: 0 auto;
 	}
+
+	.container-satu {
+		width: 100%;
+		padding: 60px;
+	}
+
+	.container-satu p {
+		letter-spacing: 2px;
+		padding: ;
+	}
+
+	.container-dua {
+		margin-left: 25px;
+	}
+
 
 }
